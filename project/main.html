@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--!Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--!Bootsrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!--!CSS-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M E N Clothing | Mens' Fashion</title>
+  </head>
+  <body>
+    <header>
+      <div class="mark mb-3">
+        <marquee>
+          <span>6-7 DAYS MINIMUM FOR DELIVERIES</span>
+          <span> WE HAVE TRENDING BRANDED T-SHIRTS </span>
+          <span>WE SHIP WORLDWIDE</span>
+          <span>TRY YOUR FASHION</span>
+          <span>WE ONLY MENS' T-SHIRTS</span>
+          <span>6-7 DAYS MINIMUM FOR DELIVERIES</span>
+          <span>WE SHIP WORLDWIDE</span>
+          <span> WE HAVE TRENDING BRANDED T-SHIRTS </span>
+          <span>TRY YOUR FASHION</span>
+          <span>WE ONLY MENS' T-SHIRTS</span>
+          <span>6-7 DAYS MINIMUM</span>
+          <span>FOR DELIVERIES</span>
+          <span>WE SHIP WORLDWIDE</span>
+          <span> WE HAVE TRENDING BRANDED T-SHIRTS </span>
+          <span>TRY YOUR FASHION</span>
+          <span>WE ONLY MENS' T-SHIRTS</span>
+          <span> WE HAVE TRENDING BRANDED T-SHIRTS </span>
+          <span> OVERSIZE FACTORY </span>
+          <span> PICK ANY OVERSIZE YOU WANT </span>
+        </marquee>
+      </div>
+
+      <div class="header-content">
+        <div class="logo">
+          <p class="ms-4">
+            <span>M</span>
+            <span>E</span>
+            <span>N</span>
+          </p>
+        </div>
+      
+        <nav>
+          <ul>
+            <li><a class="navItems" href="index.html">Home</a></li>
+            <li><a class="navItems" href="about.html">Our Story</a></li>
+            <li><a class="navItems" href="#contact">Contact Us</a></li>
+            <li><a class="navItems" href="#">Subscribe</a></li>
+            <li><a class="navItems" href="#follow">Follow Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="hidden" ></div>
+      </div>
+
+      
+
+      <div class="cart" style="display: flex; justify-content: center">
+        <button
+          style="
+            text-decoration: none;
+            border: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <!-- <label for="cart" style="display: flex; align-items: center"
+            ><ion-icon
+              name="cart-outline"
+              style="font-size: 1.5em; margin: 0 5px 0 0; cursor: pointer"
+              id="cart-button"
+            ></ion-icon
+          ></label>
+          <label
+            for="cart-count"
+            id="cart-count"
+            style="font-weight: 600; font-size: 1.2em"
+            >0</label
+          > -->
+        </button>
+      </div>
+    </header>
+<!-- 
+    <section class="cart" id="cart" style="display: block;border-bottom: 1px solid black;">
+      <div class="cart-conetent mt-2" style="display: flex; justify-content: center;">
+        <label for="cart-content" id="cart-content">You have <label for="count">0</label> products in your cart</label>
+      </div>
+      <div class="buttons py-3">
+        <button class="btn btn-dark ms-1">Buy now</button>
+        <button class="btn btn-secondary">clear all</button>
+      </div>
+    </section> -->
+
+
+    
+
+    
+    <section class="container my-4" style="padding-top: 100px;">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img3.jpg" class="card-img-top" alt="Product 1" />
+            <div class="card-body">
+              <h5 class="card-title">Calista Robot Edition <br> (PINK)</h5>
+              <label for="id" style="display: none" id="id">1</label>
+              <p class="card-text">LKR.3500.00</p>
+              <button class="btn btn-dark" id="btn1">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img8.jpg" class="card-img-top" alt="Product 2" />
+            <div class="card-body">
+              <h5 class="card-title">Calista Robot Edition <br>(BLUE)</h5>
+              <p class="card-text">LKR.3500.00</p>
+              <button class="btn btn-dark" id="btn2">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img7.jpg" class="card-img-top" alt="Product 3" />
+            <div class="card-body">
+              <h5 class="card-title">Calista Robot Edition <br>(LIGHT GREEN)</h5>
+              <p class="card-text">LKR.3500.00</p>
+              <button class="btn btn-dark" id="btn3">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img20.jpg" class="card-img-top" alt="Product 4" />
+            <div class="card-body">
+              <h5 class="card-title">Street.82 Rose Edition<br>(PURE WHITE)</h5>
+              <p class="card-text">LKR.3200.00</p>
+              <button class="btn btn-dark" id="btn4">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img21.jpg" class="card-img-top" alt="Product 5" />
+            <div class="card-body">
+              <h5 class="card-title">Street.82 Rose Edition<br>(BLUE)</h5>
+              <p class="card-text">LKR.3200.00</p>
+              <button class="btn btn-dark" id="btn5">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img22.jpg" class="card-img-top" alt="Product 6" />
+            <div class="card-body">
+              <h5 class="card-title">Street.82 Rose Edition<br>(GREY)</h5>
+              <p class="card-text">KR.3200.00</p>
+              <button class="btn btn-dark" id="btn6">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img14.jpg" class="card-img-top" alt="Product 7" />
+            <div class="card-body">
+              <h5 class="card-title">Calista Simple<br>(DARK GREEN)</h5>
+              <p class="card-text">LKR.2500.00</p>
+              <button class="btn btn-dark" id="btn7">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img11.jpg" class="card-img-top" alt="Product 8" />
+            <div class="card-body">
+              <h5 class="card-title">Calista Simple<br>(BLACK)</h5>
+              <p class="card-text">LKR.2500.00</p>
+              <button class="btn btn-dark" id="btn8">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img12.jpg" class="card-img-top" alt="Product 9" />
+            <div class="card-body">
+              <h5 class="card-title">Calista Simple<br>(WHITE)</h5>
+              <p class="card-text">LKR.2500.00</p>
+              <button class="btn btn-dark" id="btn9">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="images/img30.jpg" class="card-img-top" alt="Product 10" />
+            <div class="card-body">
+              <h5 class="card-title">Street.82 Simple<br>Oversized Tee</h5>
+              <label for="id" style="display: none">1</label>
+              <p class="card-text">LKR.3000.00</p>
+              <button class="btn btn-dark" id="btn10">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img31.jpg" class="card-img-top" alt="Product 11" />
+          <div class="card-body">
+            <h5 class="card-title">Street.82 Simple<br>Oversized Tee</h5>
+            <p class="card-text">LKR.3000.00</p>
+            <button class="btn btn-dark" id="btn11">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img32.jpg" class="card-img-top" alt="Product 12" />
+          <div class="card-body">
+            <h5 class="card-title">Street.82 Simple<br>Oversized Tee</h5>
+            <p class="card-text">LKR.3000.00</p>
+            <button class="btn btn-dark" id="btn12">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img4.jpg" class="card-img-top" alt="Product 13" />
+          <div class="card-body">
+            <h5 class="card-title">Hmm. <br>Oversized Tee</h5>
+            <p class="card-text">LKR.2900.00</p>
+            <button class="btn btn-dark" id="btn13">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img6.jpg" class="card-img-top" alt="Product 14" />
+          <div class="card-body">
+            <h5 class="card-title">Hmm. <br>Oversized Tee</h5>
+            <p class="card-text">LKR.2900.00.00</p>
+            <button class="btn btn-dark" id="btn14">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img1.jpg" class="card-img-top" alt="Product 15" />
+          <div class="card-body">
+            <h5 class="card-title">Hmm. <br>Oversized Tee</h5>
+            <p class="card-text">LKR.2900.00</p>
+            <button class="btn btn-dark" id="btn15">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img40.jpg" class="card-img-top" alt="Product 16" />
+          <div class="card-body">
+            <h5 class="card-title">Lugger <br>Oversized Tee</h5>
+            <p class="card-text">LKR.2100.00</p>
+            <button class="btn btn-dark" id="btn16">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img41.jpg" class="card-img-top" alt="Product 17" />
+          <div class="card-body">
+            <h5 class="card-title">Lugger <br>Oversized Tee</h5>
+            <p class="card-text">LKR.2100.00</p>
+            <button class="btn btn-dark" id="btn17">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="images/img42.jpg" class="card-img-top" alt="Product 18" />
+          <div class="card-body">
+            <h5 class="card-title">Lugger <br>Oversized Tee</h5>
+            <p class="card-text">LKR.2100.00</p>
+            <button class="btn btn-dark" id="btn18">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--!ionicons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--!Bootsrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <div class="hi">
+    <marquee>
+      <span>WE HAVE ONLY MENS' T-SHIRTS </span>
+      <span>YOU CAN GET ANY OVERSIZE T-SHIRTS YOU WANT  </span>
+      <span>WE HAVE ONLY MENS' T-SHIRTS </span>
+      <span>YOU CAN GET ANY OVERSIZE T-SHIRTS YOU WANT  </span>
+      <span>WE HAVE ONLY MENS' T-SHIRTS </span>
+      <span>YOU CAN GET ANY OVERSIZE T-SHIRTS YOU WANT  </span>
+      <span>WE HAVE ONLY MENS' T-SHIRTS </span>
+      <span>YOU CAN GET ANY OVERSIZE T-SHIRTS YOU WANT  </span>
+    </marquee> -->
+  <!-- </div> -->
+    
+
+    <footer>
+      <div class="footer-content">
+        <div class="contact-info"id="contact">
+          <h3>Contact Us</h3>
+          <p>Email: udaisenevirathne@gmail.com</p>
+          <p>Phone: 077-2321706</p>
+        </div>
+        <div class="social-links" id="follow">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+      </div>     
+       
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+span {
+  margin-right: 15px;
+  padding: 0;
+}
+
+.mark {
+  margin: 0;
+  padding: 5px 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  background-color: #131414;
+  border-color: #131414;
+}
+
+.card-img-shop {
+  max-height: 300px;
+}
+
+button#cart_button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info,
+.social-links {
+  flex-basis: 45%;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-content h3 {
+  color: #e4dfdf;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  z-index: 1000;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+header:hover {
+  background-color: rgb(214, 208, 208);
+  transition: all 0.4s ease 0s;
+  color: black;
+}
+
+.header-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header:hover .navItems {
+  color: black;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  font-family: 'poppins';
+}
+
+.logo:hover {
+  color: rgb(223, 17, 62);
+  transition: all 0.4s ease 0s;
+}
+
+.social-links a{
+  color: #fff;
+  margin-right: 10px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b1a1a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(223, 17, 223);
+  transition: all 0.4s ease 0s;
+}
+
+nav li a:hover {
+  color: rgb(223, 17, 51);
+  transition: all 0.4s ease 0s;
+}
+
+/* @media (max-width: 1450px) {
+  .logo {
+    display: none;
+  }
+} */
